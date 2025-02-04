@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    text-align: center;
+    background-color:#000;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Carter One', cursive;
+
+background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% ); 
+}
+
+.images{
+    display: grid;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden ;
+    grid-template-columns: repeat(3,129px);
+    grid-template-rows: repeat(14,129px);
+    grid-auto-flow: auto;
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition:0.3s;
+    -webkit-mask:
+    linear-gradient(red 0 0) center/calc(100% - 1.85*30px) calc(100% - 1.85*30px) no-repeat,
+    radial-gradient(farthest-side,red 98%,#0000) 0 0/60px 60px round;
+          mask:
+    linear-gradient(red 0 0) center/calc(100% - 1.85*30px) calc(100% - 1.85*30px) no-repeat,
+    radial-gradient(farthest-side,red 98%,#0000) 0 0/60px 60px round;
+}
+
+img:hover{
+    height: 200px;
+    width: 200px;
+    transform:rotateZ(300deg);
+    z-index: 1;
+}
+
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background:black;
+  padding:20px;
+  text-align: center;
+  font-family:monospace;
+}
+.footer a{
+  padding:5px 5px;
+  text-decoration:none;
+  font-size: 25px;
+  font-weight:bold;
+  color:  #fff;
+  animation:anim 3.2s linear infinite ;
+}
+@keyframes anim{
+    0%{
+        border-top:3px solid #fff;
+    }
+    25%{
+        border-left:3px solid #fff;
+    }
+    50%{
+        border-bottom:3px solid #fff;
+    }
+    75%{
+        border-right:3px solid #fff;
+    }
+}
