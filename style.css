@@ -24,7 +24,7 @@ background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 
     justify-content: center;
     overflow:hidden ;
     grid-template-columns: repeat(3,129px);
-    grid-template-rows: repeat(14,129px);
+    grid-template-rows: repeat(16,129px);
     grid-auto-flow: auto;
 }
 
